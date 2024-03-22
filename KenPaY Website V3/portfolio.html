@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<title>KenPaY | Portfolio</title>
+	<link rel="stylesheet" href="css/portfolio.css">
+	<script src="https://kit.fontawesome.com/e37f0e4748.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+
+	<!-- Alert Discord ID-->
+	<p id="alert">Discord ID Copied!</p>
+	<div class="loader">
+		<img class="load-logo" src="img/logo.png">
+		<div></div>
+	</div>
+
+
+	<!-- NavBar -->
+	<nav>
+		<div class="menu-icon">
+			<span class="fas fa-bars"></span>
+		</div>
+		<div class="logo"><i class="fas fa-chart-line"></i> Ken<span style="color:#00b2e1ed">PaY</span></div>
+		<div class="nav-items">
+			<li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+			<li><a class="btn-bg-navbar" href="#"><i class="fas fa-images"></i> Portfolio</a></li>
+			<li><a href="#"><i class="fas fa-terminal"></i> Commands List</a></li>
+			<li><a href="#"><i class="fas fa-address-book"></i> Contact</a></li>
+		</div>
+		<div class="search-icon">
+			<span class="fas fa-search"></span>
+		</div>
+		<div class="cancel-icon">
+			<span class="fas fa-times"></span>
+		</div>
+		<form action="#">
+			<input type="search" class="search-data" placeholder="Search" required>
+			<button type="submit" class="fas fa-search"></button>
+		</form>
+	</nav>
+
+
+	<!-- Portfolio Page -->
+	<section id="portfolio">
+		<div class="wrapper2">
+			<div class="portfolio-text">
+				<h1><i class="fas fa-images" aria-hidden="true"></i> Portfolio</h1>
+				<p>Here are some of my past projects, the portfolio will be updated in meantime.</p>
+			</div>
+			<!-- filter Items -->
+			<nav2>
+				<div class="items">
+					<span class="item active" data-name="all">All</span>
+					<span class="item" data-name="lobby">Lobby</span>
+					<span class="item" data-name="new">New</span>
+				</div>
+			</nav2>
+			<!-- filter Images -->
+			<div class="gallery">
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/1.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/2.jpg" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/3.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/4.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/5.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/6.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/7.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/8.jpg" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/9.png" alt=""></span></div>
+				<div class="image" data-name="lobby"><span><img src="img/portfolio/10.png" alt=""></span></div>
+				<div class="image" data-name="new"><span><img src="img/portfolio/11.png" alt=""></span></div>
+				<div class="image" data-name="new"><span><img src="img/portfolio/12.png" alt=""></span></div>
+				<div class="image" data-name="new"><span><img src="img/portfolio/13.jpg" alt=""></span></div>
+				<div class="image" data-name="new"><span><img src="img/portfolio/14.png" alt=""></span></div>
+				<div class="image" data-name="new"><span><img src="img/portfolio/15.png" alt=""></span></div>
+				<div class="image" data-name="new"><span><img src="img/portfolio/16.jpg" alt=""></span></div>
+			</div>
+		</div>
+		<!-- fullscreen img preview box -->
+		<div class="preview-box">
+			<div class="details">
+				<span class="title">Image Category: <p></p></span>
+				<span class="icon fas fa-times"></span>
+			</div>
+			<div class="image-box"><img src="" alt=""></div>
+		</div>
+		<div class="shadow"></div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-content">
+			<h3><i class="fab fa-studiovinari" aria-hidden="true"></i> KenPaY <span
+					style="background: #c0c0c0; border-radius: 4px; padding: 1px 1px;">Builds</span></h3>
+			<p>Copyright &copy; 2021 KenPaY. Designed by <span style="color: #02a7d3">MaxYPro</span></p>
+			<ul class="socials">
+				<li><a style="cursor: pointer;" onclick="copy('text1')"><i class="fab fa-discord"></i></a></li>
+				<p id="text1">
+					Mr_KenPaY#5134
+				</p>
+				<li><a href="https://www.instagram.com/nichita_mutelica/"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCsz6MSCiL8eIKTLEne4o_og"><i class="fa fa-youtube"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<!-- Navbar Script -->
+	<script>
+		const menuBtn = document.querySelector(".menu-icon span");
+		const searchBtn = document.querySelector(".search-icon");
+		const cancelBtn = document.querySelector(".cancel-icon");
+		const items = document.querySelector(".nav-items");
+		const form = document.querySelector("form");
+		menuBtn.onclick = () => {
+			items.classList.add("active");
+			menuBtn.classList.add("hide");
+			searchBtn.classList.add("hide");
+			cancelBtn.classList.add("show");
+		}
+		cancelBtn.onclick = () => {
+			items.classList.remove("active");
+			menuBtn.classList.remove("hide");
+			searchBtn.classList.remove("hide");
+			cancelBtn.classList.remove("show");
+			form.classList.remove("active");
+			cancelBtn.style.color = "#ff3d00";
+		}
+		searchBtn.onclick = () => {
+			form.classList.add("active");
+			searchBtn.classList.add("hide");
+			cancelBtn.classList.add("show");
+		}
+	</script>
+	<script>
+		//selecting all required elements
+		const filterItem = document.querySelector(".items");
+		const filterImg = document.querySelectorAll(".gallery .image");
+
+		window.onload = () => { //after window loaded
+			filterItem.onclick = (selectedItem) => { //if user click on filterItem div
+				if (selectedItem.target.classList.contains("item")) { //if user selected item has .item class
+					filterItem.querySelector(".active").classList.remove("active"); //remove the active class which is in first item
+					selectedItem.target.classList.add("active"); //add that active class on user selected item
+					let filterName = selectedItem.target.getAttribute("data-name"); //getting data-name value of user selected item and store in a filtername variable
+					filterImg.forEach((image) => {
+						let filterImges = image.getAttribute("data-name"); //getting image data-name value
+						//if user selected item data-name value is equal to images data-name value
+						//or user selected item data-name value is equal to "all"
+						if ((filterImges == filterName) || (filterName == "all")) {
+							image.classList.remove("hide"); //first remove the hide class from the image
+							image.classList.add("show"); //add show class in image
+						} else {
+							image.classList.add("hide"); //add hide class in image
+							image.classList.remove("show"); //remove show class from the image
+						}
+					});
+				}
+			}
+			for (let i = 0; i < filterImg.length; i++) {
+				filterImg[i].setAttribute("onclick", "preview(this)"); //adding onclick attribute in all available images
+			}
+		}
+
+		//fullscreen image preview function
+		//selecting all required elements
+		const previewBox = document.querySelector(".preview-box"),
+			categoryName = previewBox.querySelector(".title p"),
+			previewImg = previewBox.querySelector("img"),
+			closeIcon = previewBox.querySelector(".icon"),
+			shadow = document.querySelector(".shadow");
+
+		function preview(element) {
+			//once user click on any image then remove the scroll bar of the body, so user cant scroll up or down
+			document.querySelector("body").style.overflow = "hidden";
+			let selectedPrevImg = element.querySelector("img").src; //getting user clicked image source link and stored in a variable
+			let selectedImgCategory = element.getAttribute("data-name"); //getting user clicked image data-name value
+			previewImg.src = selectedPrevImg; //passing the user clicked image source in preview image source
+			categoryName.textContent = selectedImgCategory; //passing user clicked data-name value in category name
+			previewBox.classList.add("show"); //show the preview image box
+			shadow.classList.add("show"); //show the light grey background
+			closeIcon.onclick = () => { //if user click on close icon of preview box
+				previewBox.classList.remove("show"); //hide the preview box
+				shadow.classList.remove("show"); //hide the light grey background
+				document.querySelector("body").style.overflow = "auto"; //show the scroll bar on body
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>

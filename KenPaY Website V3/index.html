@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<title>KenPaY | Builds</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/e37f0e4748.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+
+	<!-- Alert Discord ID-->
+	<p id="alert">Discord ID Copied!</p>
+	<div class="loader">
+		<img class="load-logo" src="img/logo.png">
+		<div></div>
+	</div>
+
+
+	<!-- Home Page -->
+	<section id="home">
+		<nav>
+			<div class="menu-icon">
+				<span class="fas fa-bars"></span>
+			</div>
+			<div class="logo"><i class="fas fa-chart-line"></i> Ken<span style="color:#00b2e1ed">PaY</span></div>
+			<div class="nav-items">
+				<li><a class="btn-bg-navbar" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="portfolio.html"><i class="fas fa-images"></i> Portfolio</a></li>
+				<li><a href="#"><i class="fas fa-terminal"></i> Commands List</a></li>
+				<li><a href="#"><i class="fas fa-address-book"></i> Contact</a></li>
+			</div>
+			<div class="search-icon">
+				<span class="fas fa-search"></span>
+			</div>
+			<div class="cancel-icon">
+				<span class="fas fa-times"></span>
+			</div>
+			<form action="#">
+				<input type="search" class="search-data" placeholder="Search" required>
+				<button type="submit" class="fas fa-search"></button>
+			</form>
+		</nav>
+		<div class="content">
+			<h1 class="maintext"><i class="fab fa-studiovinari"></i> KENPAY <span style="color:#00b2e1ed">BUILDS</span>
+			</h1>
+			<div class="button">
+				<a href="portfolio.html" class="btn"><i class="fas fa-images"></i> PORTFOLIO</a>
+				<a href="#" class="btn, btn2"><i class="fab fa-discord"></i> DISCORD</a>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- AboutMe Page -->
+	<div class="container-wave">
+		<section class="aboutme" id="page2">
+			<svg class="svg-about" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+				<path d="M0,50 C150,110 350,0 500,70 L500,00 L0,0 Z"
+					style="stroke: none; fill:rgba(29, 29, 29, 0.089);"></path>
+			</svg>
+			<div class="aboutme-main">
+				<div class="aboutme-logo">
+					<img class="about-logo" src="img/logo.png"></img>
+				</div>
+				<div class="aboutme-text">
+					<h1><i class="fas fa-address-card"></i> About Me</h1>
+					<div class="aboutme-tags">
+						<a class="aboutme-tag1"><i class="fas fa-toolbox"></i> Minecraft Builder</a>
+					</div>
+					<p><i class="fas fa-quote-left"></i> Hello there, I'm Nichita but better call me Ken, you are here
+						to hear and see what I can do, not who I'm; I do build for a long time and was on many teams and
+						communities, no need to worry about my experience, my builds are good and high quality projects,
+						for a good price of course. I'm based on Structure and Landscapes,my best experience on a theme
+						is 'Sci-fi' but also good at other themes for example: medieval to modern, chill to action,
+						fantasy to reality, believe me, you'll never regret to have my creativity on your world. <i
+							class="fas fa-quote-right"></i></p>
+				</div>
+				<div class="aboutme-buttons">
+					<a class="aboutme-btn aboutme-btn1 aboutme-btn-size" style="cursor: pointer;"
+						onclick="copy('text1')"><i class="fab fa-discord"></i></a></li>
+					<p id="text1">
+						Mr_KenPaY#5134
+					</p>
+					<a href="https://www.instagram.com/nichita_mutelica/"
+						class="aboutme-btn aboutme-btn2 aboutme-btn-size"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCsz6MSCiL8eIKTLEne4o_og"
+						class="aboutme-btn aboutme-btn3 aboutme-btn-size"><i class="fab fa-youtube"></i></a>
+				</div>
+				<div class="context">
+					<h1></h1>
+				</div>
+				<div class="area">
+					<ul class="circles">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="aboutme-ores">
+				<image class="ores" src="img/resources/2.png">
+			</div>
+	</div>
+	</section>
+
+
+	<!-- Preview Portfolio Page -->
+	<section class="ppreview" id="page3">
+		<div class="ppreview-text>">
+			<h1><i class="fas fa-images"></i> Portfolio</h1>
+			<p>A preview of my builds. Click on the button below to watch the entire portfolio.</p>
+		</div>
+		<div class="ppreview-main">
+			<div class="wrapper">
+				<div class="carousel owl-carousel">
+					<div class="card card-1">
+						<img src="img/portfolio/1.png" style="border-radius:20px;">
+					</div>
+					<div class="card card-2">
+						<img src="img/portfolio/2.jpg" style="border-radius:20px;">
+					</div>
+					<div class="card card-3">
+						<img src="img/portfolio/3.png" style="border-radius:20px;">
+					</div>
+					<div class="card card-4">
+						<img src="img/portfolio/4.png" style="border-radius:20px;">
+					</div>
+					<div class="card card-5">
+						<img src="img/portfolio/5.png" style="border-radius:20px;">
+					</div>
+					<div class="card card-6">
+						<img src="img/portfolio/6.png" style="border-radius:20px;">
+					</div>
+					<div class="card card-7">
+						<img src="img/portfolio/8.jpg" style="border-radius:20px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ppreview-buttons">
+			<a href="#" class="ppreview-btn">View All <i class="fas fa-angle-right"></i></a>
+		</div>
+		<div class="ppreview-pig">
+			<img class="pig" src="img/resources/1.png">
+		</div>
+	</section>
+
+
+
+	<!-- Review Page -->
+	<section id="page4">
+		<div class="container">
+			<div class="elements">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<svg class="svg-rvwave" viewBox="0 0 1000 500" preserveAspectRatio="xMinYMin meet">
+			<path
+				d="M0,192L26.7,197.3C53.3,203,107,213,160,208C213.3,203,267,181,320,192C373.3,203,427,245,480,234.7C533.3,224,587,160,640,160C693.3,160,747,224,800,240C853.3,256,907,224,960,208C1013.3,192,1067,192,1120,192C1173.3,192,1227,192,1280,197.3C1333.3,203,1387,213,1413,218.7L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+				style="stroke: none; fill:rgb(122 122 122 / 12%);"></path>
+		</svg>
+		<div class="reviews">
+			<div class="inner">
+				<h1><i class="fas fa-envelope-open-text"></i> Customer Reviews</h1>
+				<p>Some reviews of my previous customers.</p>
+				<div class="border"></div>
+
+				<div class="row">
+					<div class="col">
+						<div class="testimonial">
+							<img src="img/resources/pr1.png" alt="">
+							<div class="name">razorrider7</div>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+
+							<p>
+								First of all, let me say 10/10! I love my new map, and I am positive it will impress my
+								players. The work done by both Exo and Ken was incredible and timely, and I will be
+								coming back for more should I need any other maps, spawns, or builds.
+							</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="testimonial">
+							<img src="img/resources/pr2.jpg" alt="">
+							<div class="name">Abyus</div>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+
+							<p>
+								I worked with Ken for a space ship build and he did absolute fantastic work. He took a
+								rough broad idea I had and turned it into phenomenal idea, far surpassing what I was
+								expecting, going above and beyond my expectations. While a very large scale build he
+								never sacrificed size for detail managing to fit both in.
+							</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="testimonial">
+							<img src="img/resources/pr3.png" alt="">
+							<div class="name">MaxYPro</div>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<p>
+								KenPay's builds are extremely quality made, he is putting a lot of effort and creativity
+								to make that kind of piece of art. I highly recommend him!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-content">
+			<h3><i class="fab fa-studiovinari" aria-hidden="true"></i> KenPaY <span
+					style="background: #c0c0c0; border-radius: 4px; padding: 1px 1px;">Builds</span></h3>
+			<p>Copyright &copy; 2021 KenPaY. Designed by <span style="color: #02a7d3">MaxYPro</span></p>
+			<ul class="socials">
+				<li><a style="cursor: pointer;" onclick="copy('text1')"><i class="fab fa-discord"></i></a></li>
+				<p id="text1">
+					Mr_KenPaY#5134
+				</p>
+				<li><a href="https://www.instagram.com/nichita_mutelica/"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCsz6MSCiL8eIKTLEne4o_og"><i class="fa fa-youtube"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<!-- Navbar Script -->
+	<script>
+		const menuBtn = document.querySelector(".menu-icon span");
+		const searchBtn = document.querySelector(".search-icon");
+		const cancelBtn = document.querySelector(".cancel-icon");
+		const items = document.querySelector(".nav-items");
+		const form = document.querySelector("form");
+		menuBtn.onclick = () => {
+			items.classList.add("active");
+			menuBtn.classList.add("hide");
+			searchBtn.classList.add("hide");
+			cancelBtn.classList.add("show");
+		}
+		cancelBtn.onclick = () => {
+			items.classList.remove("active");
+			menuBtn.classList.remove("hide");
+			searchBtn.classList.remove("hide");
+			cancelBtn.classList.remove("show");
+			form.classList.remove("active");
+			cancelBtn.style.color = "#ff3d00";
+		}
+		searchBtn.onclick = () => {
+			form.classList.add("active");
+			searchBtn.classList.add("hide");
+			cancelBtn.classList.add("show");
+		}
+	</script>
+	<!-- Portfolio Slide Script -->
+	<script>
+		$(".carousel").owlCarousel({
+			margin: 20,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1,
+					nav: false
+				},
+				600: {
+					items: 2,
+					nav: false
+				},
+				1000: {
+					items: 3,
+					nav: false
+				}
+			}
+		});
+	</script>
+
+
+</body>
+
+</html>
